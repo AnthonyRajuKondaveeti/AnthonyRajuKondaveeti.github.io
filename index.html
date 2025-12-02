@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anthony Raju Kondaveeti | AI Researcher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            slate: {
+              850: '#151e2e',
+              900: '#0f172a',
+              950: '#020617',
+            },
+            primary: {
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+            }
+          },
+          animation: {
+            'blob': 'blob 7s infinite',
+            'fade-in': 'fadeIn 0.5s ease-out forwards',
+            'slide-up': 'slideUp 0.5s ease-out forwards',
+          },
+          keyframes: {
+            blob: {
+              '0%': { transform: 'translate(0px, 0px) scale(1)' },
+              '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+              '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+              '100%': { transform: 'translate(0px, 0px) scale(1)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #020617;
+      color: #e2e8f0;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-[#020617] text-slate-200 selection:bg-blue-500/30 selection:text-blue-200 font-sans">
+
+  <!-- Navigation Backdrop -->
+  <nav class="fixed top-0 w-full z-40 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="font-mono text-xl font-bold text-white tracking-tighter">
+        AK<span class="text-blue-500">.</span>
+      </div>
+      <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+        <a href="#research" class="hover:text-blue-400 transition-colors">Research</a>
+        <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="relative">
+    <!-- Hero Section -->
+    <div class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      <!-- Background Blobs -->
+      <div
+        class="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-blob mix-blend-screen pointer-events-none">
+      </div>
+      <div
+        class="absolute top-0 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl animate-blob animation-delay-2000 mix-blend-screen pointer-events-none">
+      </div>
+      <div
+        class="absolute -bottom-32 left-1/3 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl animate-blob animation-delay-4000 mix-blend-screen pointer-events-none">
+      </div>
+
+      <div class="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-8 animate-fade-in">
+        <div class="relative inline-block mb-4">
+          <div
+            class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-tr from-blue-500 to-purple-600 p-[3px] mx-auto shadow-2xl shadow-blue-500/20">
+            <div class="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
+              <img src="Anthony Raju Kondaveeti 2448031 (1).png" alt="Anthony Raju Kondaveeti"
+                class="w-full h-full object-cover object-top" />
+            </div>
+          </div>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white">
+          Anthony Raju Kondaveeti
+        </h1>
+
+        <p class="text-xl md:text-2xl text-blue-200 font-light">
+          AI/ML Researcher
+        </p>
+
+        <p class="text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          Building intelligent systems with LLMs, RAG, and Computer Vision.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4 pt-4">
+          <a href="mailto:tonykondaveetijmj98@gmail.com"
+            class="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-blue-500 transition-all group">
+            <i data-lucide="mail" class="text-blue-400 group-hover:text-white w-[18px] h-[18px]"></i>
+            <span class="text-sm">Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/anthony-raju-kondaveeti-855978281/" target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-blue-500 transition-all group">
+            <i data-lucide="linkedin" class="text-blue-400 group-hover:text-white w-[18px] h-[18px]"></i>
+            <span class="text-sm">LinkedIn</span>
+          </a>
+          <a href="https://github.com/AnthonyRajuKondaveeti" target="_blank" rel="noopener noreferrer"
+            class="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-blue-500 transition-all group">
+            <i data-lucide="github" class="text-blue-400 group-hover:text-white w-[18px] h-[18px]"></i>
+            <span class="text-sm">GitHub</span>
+          </a>
+          <a href="#"
+            class="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-medium shadow-lg shadow-blue-500/25 transition-all hover:-translate-y-1">
+            <i data-lucide="download" class="w-[18px] h-[18px]"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Section -->
+    <section id="research" class="py-20 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="h-px bg-slate-800 flex-1"></div>
+          <h2 class="text-3xl font-bold text-white tracking-tight">Research Highlights</h2>
+          <div class="h-px bg-slate-800 flex-1"></div>
+        </div>
+        <div
+          class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-8 hover:border-blue-500/30 transition-colors">
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-blue-500/10 rounded-xl text-blue-400">
+              <i data-lucide="microscope" class="w-8 h-8"></i>
+            </div>
+            <div class="space-y-4 flex-1">
+              <h3 class="text-2xl font-bold text-white">Evaluating Emotional Intelligence in LLMs</h3>
+
+              <!-- Publication Status Badges -->
+              <div class="flex flex-wrap gap-2 items-center">
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green-500/10 border border-green-500/30 rounded-full text-green-400 text-sm font-medium">
+                  <i data-lucide="check-circle" class="w-4 h-4"></i>
+                  Accepted & Presented
+                </span>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-yellow-500/10 border border-yellow-500/30 rounded-full text-yellow-400 text-sm font-medium">
+                  <i data-lucide="clock" class="w-4 h-4"></i>
+                  Under Review
+                </span>
+              </div>
+
+              <p class="text-slate-300 leading-relaxed text-lg">
+                Designed the Indian Emotional Alignment Score (I-EAS) to assess cultural and emotional responsiveness of
+                LLMs in Hindi, Tamil, and English. Created a 150-prompt multilingual dataset and applied rigorous
+                statistical validation on 450 model outputs.
+              </p>
+
+              <!-- Conference Details -->
+              <div class="bg-blue-500/5 border border-blue-500/20 rounded-lg p-4">
+                <div class="flex items-start gap-3">
+                  <i data-lucide="award" class="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0"></i>
+                  <div>
+                    <h4 class="text-white font-semibold mb-1">ISCS2025 - International Conference on Intelligent Systems
+                      for Cybersecurity</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                      Paper accepted and presented at ISCS2025, currently under review for publication in <span
+                        class="text-blue-400 font-medium">IEEE Xplore</span> (indexed in SCOPUS).
+                      Conference theme: "Integrating AI, Big Data, and Emerging Technologies for Advanced Cybersecurity
+                      Solutions"
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                <div class="bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 text-center">
+                  <div class="text-3xl font-bold text-blue-400 mb-1">450+</div>
+                  <div class="text-sm text-slate-400 font-medium tracking-wide uppercase">Outputs Analyzed</div>
+                </div>
+                <div class="bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 text-center">
+                  <div class="text-3xl font-bold text-blue-400 mb-1">3</div>
+                  <div class="text-sm text-slate-400 font-medium tracking-wide uppercase">Languages</div>
+                </div>
+                <div class="bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 text-center">
+                  <div class="text-3xl font-bold text-blue-400 mb-1">I-EAS</div>
+                  <div class="text-sm text-slate-400 font-medium tracking-wide uppercase">Novel Framework</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="h-px bg-slate-800 flex-1"></div>
+          <h2 class="text-3xl font-bold text-white tracking-tight">Professional Experience</h2>
+          <div class="h-px bg-slate-800 flex-1"></div>
+        </div>
+        <div class="space-y-8">
+          <!-- Experience 1 -->
+          <div class="relative pl-8 md:pl-0">
+            <!-- Timeline Line (Desktop) -->
+            <div
+              class="hidden md:block absolute left-[50%] top-0 bottom-0 w-px bg-slate-800 transform -translate-x-1/2">
+            </div>
+
+            <div class="md:flex items-center justify-between gap-8 md:flex-row-reverse">
+
+              <!-- Timeline Dot -->
+              <div
+                class="hidden md:block absolute left-1/2 w-4 h-4 bg-blue-500 rounded-full transform -translate-x-1/2 border-4 border-slate-900 z-10">
+              </div>
+
+              <!-- Date Card -->
+              <div class="hidden md:block w-[45%] text-left">
+                <div class="text-blue-400 font-mono text-sm mb-1">July 2025 – October 2025</div>
+                <div class="text-slate-500 text-sm flex items-center gap-1 justify-start">
+
+                  <i data-lucide="map-pin" class="w-3 h-3"></i>
+                  Bengaluru, India
+                </div>
+              </div>
+
+              <!-- Content Card -->
+              <div
+                class="md:w-[45%] bg-slate-800/30 border border-slate-700/50 p-6 rounded-xl hover:bg-slate-800/50 transition-all hover:-translate-y-1">
+                <div class="flex justify-between items-start mb-4 md:hidden">
+                  <span class="text-blue-400 text-xs font-mono bg-blue-500/10 px-2 py-1 rounded">July 2025 – October
+                    2025</span>
+                </div>
+
+                <h3 class="text-xl font-bold text-white mb-1 flex items-center gap-2">
+                  <i data-lucide="briefcase" class="text-blue-500 w-[18px] h-[18px]"></i>
+                  AI/ML Intern
+                </h3>
+                <div class="text-slate-400 font-medium mb-4">Demetrix Infotech Pvt. Ltd.</div>
+
+                <ul class="space-y-2">
+                  <li class="text-slate-300 text-sm leading-relaxed flex items-start gap-2">
+                    <span class="text-blue-500 mt-1.5">•</span>
+                    <span>Architected enterprise-grade RAG system with session-based vector collections, achieving 92%
+                      contextual accuracy.</span>
+                  </li>
+                  <li class="text-slate-300 text-sm leading-relaxed flex items-start gap-2">
+                    <span class="text-blue-500 mt-1.5">•</span>
+                    <span>Developed microservices integrating Mistral AI, Qdrant, and OCR with intelligent rate
+                      limiting.</span>
+                  </li>
+                  <li class="text-slate-300 text-sm leading-relaxed flex items-start gap-2">
+                    <span class="text-blue-500 mt-1.5">•</span>
+                    <span>Engineered hybrid search engine (Semantic + BM25) improving precision by 75%.</span>
+                  </li>
+                  <li class="text-slate-300 text-sm leading-relaxed flex items-start gap-2">
+                    <span class="text-blue-500 mt-1.5">•</span>
+                    <span>Built comprehensive testing framework for API reliability in production.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="relative pl-8 md:pl-0">
+            <!-- Timeline Line (Desktop) -->
+            <div
+              class="hidden md:block absolute left-[50%] top-0 bottom-0 w-px bg-slate-800 transform -translate-x-1/2">
+            </div>
+
+            <div class="md:flex items-center justify-between gap-8">
+
+              <!-- Timeline Dot -->
+              <div
+                class="hidden md:block absolute left-1/2 w-4 h-4 bg-blue-500 rounded-full transform -translate-x-1/2 border-4 border-slate-900 z-10">
+              </div>
+
+              <!-- Date Card -->
+              <div class="hidden md:block w-[45%] text-right">
+                <div class="text-blue-400 font-mono text-sm mb-1">June 2025 – September 2025</div>
+                <div class="text-slate-500 text-sm flex items-center gap-1 justify-end">
+                  <i data-lucide="map-pin" class="w-3 h-3"></i>
+                  Bengaluru, India
+                </div>
+              </div>
+
+              <!-- Content Card -->
+              <div
+                class="md:w-[45%] bg-slate-800/30 border border-slate-700/50 p-6 rounded-xl hover:bg-slate-800/50 transition-all hover:-translate-y-1">
+                <div class="flex justify-between items-start mb-4 md:hidden">
+                  <span class="text-blue-400 text-xs font-mono bg-blue-500/10 px-2 py-1 rounded">June 2025 – September
+                    2025</span>
+                </div>
+
+                <h3 class="text-xl font-bold text-white mb-1 flex items-center gap-2">
+                  <i data-lucide="briefcase" class="text-blue-500 w-[18px] h-[18px]"></i>
+                  Python Tutor
+                </h3>
+                <div class="text-slate-400 font-medium mb-4">Christ University</div>
+
+                <ul class="space-y-2">
+                  <li class="text-slate-300 text-sm leading-relaxed flex items-start gap-2">
+                    <span class="text-blue-500 mt-1.5">•</span>
+                    <span>Designed Python curriculum for 50 Biotechnology undergraduates, achieving 95%
+                      proficiency.</span>
+                  </li>
+                  <li class="text-slate-300 text-sm leading-relaxed flex items-start gap-2">
+                    <span class="text-blue-500 mt-1.5">•</span>
+                    <span>Developed 30+ hands-on projects to accelerate problem-solving skills.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="h-px bg-slate-800 flex-1"></div>
+          <h2 class="text-3xl font-bold text-white tracking-tight">Technical Projects</h2>
+          <div class="h-px bg-slate-800 flex-1"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Project RAG -->
+          <div
+            class="group relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+            <div class="p-6 flex-1">
+              <div class="flex justify-between items-start mb-4">
+                <div class="p-2 bg-slate-800 rounded-lg text-blue-400 group-hover:text-blue-300 transition-colors">
+                  <i data-lucide="code-2" class="w-6 h-6"></i>
+                </div>
+                <div class="flex gap-2">
+                  <a href="https://github.com/AnthonyRajuKondaveeti/Hybrid_RAG" target="_blank"
+                    rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">Hybrid_RAG</h3>
+
+              <ul class="space-y-2 mb-6">
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Next-generation AI document processing platform with advanced RAG capabilities.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Session-based collections and intelligent rate limiting.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Enterprise-grade conversational AI interactions.
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-6 pt-0 mt-auto">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Python</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Flask</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Mistral
+                  AI</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Qdrant</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Docker</span>
+              </div>
+            </div>
+          </div>
+          <!-- Project ProPhoto -->
+          <div
+            class="group relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+            <div class="p-6 flex-1">
+              <div class="flex justify-between items-start mb-4">
+                <div class="p-2 bg-slate-800 rounded-lg text-blue-400 group-hover:text-blue-300 transition-colors">
+                  <i data-lucide="code-2" class="w-6 h-6"></i>
+                </div>
+                <div class="flex gap-2">
+                  <a href="https://github.com/AnthonyRajuKondaeeti" target="_blank" rel="noopener noreferrer"
+                    class="p-2 text-slate-400 hover:text-white transition-colors">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">Art-Style
+                Adaptation of Stable Diffusion</h3>
+
+              <ul class="space-y-2 mb-6">
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Curated 80K+ WikiArt dataset for domain-specific fine-tuning.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Implemented LoRA reducing trainable parameters by 99.8%.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Optimized distributed training for 4x faster convergence.
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-6 pt-0 mt-auto">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Python</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">PyTorch</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Diffusers</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">LoRA</span>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div
+            class="group relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+            <div class="p-6 flex-1">
+              <div class="flex justify-between items-start mb-4">
+                <div class="p-2 bg-slate-800 rounded-lg text-blue-400 group-hover:text-blue-300 transition-colors">
+                  <i data-lucide="code-2" class="w-6 h-6"></i>
+                </div>
+                <div class="flex gap-2">
+                  <a href="https://github.com/AnthonyRajuKondaeeti/youtube-analyzer-chrome-extension" target="_blank"
+                    rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">YouTube Video
+                Analyzer</h3>
+
+              <ul class="space-y-2 mb-6">
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Chrome extension analyzing 100K+ videos with sentiment tracking.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Multilingual NLP pipeline supporting 12+ languages.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Correlated comment sentiment with video timestamps (r=0.87).
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-6 pt-0 mt-auto">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Flask</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">NLP</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">JavaScript</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="group relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+            <div class="p-6 flex-1">
+              <div class="flex justify-between items-start mb-4">
+                <div class="p-2 bg-slate-800 rounded-lg text-blue-400 group-hover:text-blue-300 transition-colors">
+                  <i data-lucide="code-2" class="w-6 h-6"></i>
+                </div>
+                <div class="flex gap-2">
+                  <a href="https://github.com/AnthonyRajuKondaeeti/ProPhoto-ai" target="_blank"
+                    rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">ProPhoto-AI
+                Analysis Suite</h3>
+
+              <ul class="space-y-2 mb-6">
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Architected multi-modal AI platform processing 10K+ docs daily.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Deployed RAG pipeline with Mistral achieving 93% retrieval precision.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Integrated BLIP-2 & CLIP for zero-shot image classification.
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-6 pt-0 mt-auto">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">LangChain</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Chroma</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Transformers</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Gradio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="group relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+            <div class="p-6 flex-1">
+              <div class="flex justify-between items-start mb-4">
+                <div class="p-2 bg-slate-800 rounded-lg text-blue-400 group-hover:text-blue-300 transition-colors">
+                  <i data-lucide="code-2" class="w-6 h-6"></i>
+                </div>
+                <div class="flex gap-2">
+                  <a href="https://github.com/AnthonyRajuKondaeeti/Traffic-Sign-Recognition-using-CNN" target="_blank"
+                    rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">Traffic Sign
+                Classification (CNN)</h3>
+
+              <ul class="space-y-2 mb-6">
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Achieved 96.96% accuracy on German Traffic Sign dataset.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Implemented augmentation pipeline improving robustness by 18%.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Deployed regularization suite reducing overfitting by 62%.
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-6 pt-0 mt-auto">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">TensorFlow</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Keras</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">OpenCV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="h-px bg-slate-800 flex-1"></div>
+          <h2 class="text-3xl font-bold text-white tracking-tight">Technical Arsenal</h2>
+          <div class="h-px bg-slate-800 flex-1"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Languages -->
+          <div class="bg-slate-800/30 border border-slate-700 rounded-xl p-6 hover:bg-slate-800/60 transition-colors">
+            <div class="flex items-center gap-3 mb-4 text-blue-400">
+              <i data-lucide="terminal" class="w-5 h-5"></i>
+              <h3 class="font-bold text-white">Languages</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Python</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">SQL</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">HTML/CSS</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">JavaScript</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">TypeScript</span>
+            </div>
+          </div>
+
+          <!-- AI/ML Frameworks -->
+          <div class="bg-slate-800/30 border border-slate-700 rounded-xl p-6 hover:bg-slate-800/60 transition-colors">
+            <div class="flex items-center gap-3 mb-4 text-blue-400">
+              <i data-lucide="cpu" class="w-5 h-5"></i>
+              <h3 class="font-bold text-white">AI/ML Frameworks</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">PyTorch</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">TensorFlow</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Keras</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Diffusers</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">LangChain</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Transformers</span>
+            </div>
+          </div>
+
+          <!-- Data Science -->
+          <div class="bg-slate-800/30 border border-slate-700 rounded-xl p-6 hover:bg-slate-800/60 transition-colors">
+            <div class="flex items-center gap-3 mb-4 text-blue-400">
+              <i data-lucide="database" class="w-5 h-5"></i>
+              <h3 class="font-bold text-white">Data Science</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Pandas</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">NumPy</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Scikit-learn</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Matplotlib</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Seaborn</span>
+            </div>
+          </div>
+
+          <!-- Infrastructure -->
+          <div class="bg-slate-800/30 border border-slate-700 rounded-xl p-6 hover:bg-slate-800/60 transition-colors">
+            <div class="flex items-center gap-3 mb-4 text-blue-400">
+              <i data-lucide="database" class="w-5 h-5"></i>
+              <h3 class="font-bold text-white">Infrastructure</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Qdrant</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">ChromaDB</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">PostgreSQL</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Docker</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Git</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-slate-900 bg-slate-950">
+      <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+        <h2 class="text-2xl font-bold text-white">Education & Certifications</h2>
+        <div class="grid md:grid-cols-2 gap-8 text-left">
+          <div class="space-y-4">
+            <h3 class="text-blue-400 font-mono text-sm uppercase tracking-wider">Education</h3>
+            <div class="space-y-4">
+              <div>
+                <div class="text-white font-semibold">M.Sc. Data Science</div>
+                <div class="text-slate-500 text-sm">Christ University • 2024-Present</div>
+              </div>
+              <div>
+                <div class="text-white font-semibold">B.Sc. Math, Physics & CS</div>
+                <div class="text-slate-500 text-sm">Andhra Loyola College • 2020-2023</div>
+                <div class="text-blue-500/80 text-xs mt-1">CGPA: 9.02/10</div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-blue-400 font-mono text-sm uppercase tracking-wider">Certifications</h3>
+            <ul class="space-y-3 text-sm text-slate-400">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>Advanced
+                Learning Algorithms (Coursera)</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>AWS
+                Fundamentals</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>SQL for
+                Data Science</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Certifications Carousel -->
+        <div class="pt-16">
+          <h3 class="text-xl font-bold text-white mb-6 text-center">View My Certificates</h3>
+          <div class="relative max-w-6xl mx-auto">
+            <!-- Carousel Container -->
+            <div class="overflow-hidden rounded-xl border border-slate-700 bg-slate-900/50">
+              <div id="certCarousel" class="flex transition-transform duration-500 ease-out">
+                <!-- Certification Slides -->
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">C++ Certificate</h4>
+                    <embed src="certifications/CPP certificate.pdf" type="application/pdf"
+                      class="w-full h-[800px] rounded-lg" />
+                  </div>
+                </div>
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">SQL Essential Training</h4>
+                    <embed src="certifications/CertificateOfCompletion_SQL Essential Training.pdf"
+                      type="application/pdf" class="w-full h-[500px] rounded-lg" />
+                  </div>
+                </div>
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">Advanced ML Algorithms</h4>
+                    <embed src="certifications/Course Advanced ML algorithms.pdf" type="application/pdf"
+                      class="w-full h-[800px] rounded-lg" />
+                  </div>
+                </div>
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">Machine Learning (Coursera)</h4>
+                    <embed src="certifications/Coursera_ML.pdf" type="application/pdf"
+                      class="w-full h-[800px] rounded-lg" />
+                  </div>
+                </div>
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">SQL for Data Science</h4>
+                    <embed src="certifications/Great_Leraning_SQL_Data Science.pdf" type="application/pdf"
+                      class="w-full h-[800px] rounded-lg" />
+                  </div>
+                </div>
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">Python Basics (HackerRank)</h4>
+                    <embed src="certifications/Hackerrank_Python_Basics.pdf" type="application/pdf"
+                      class="w-full h-[800px] rounded-lg" />
+                  </div>
+                </div>
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">Matplotlib Specialization</h4>
+                    <embed src="certifications/Infoys_Sp_Matplotlib.pdf" type="application/pdf"
+                      class="w-full h-[800px] rounded-lg" />
+                  </div>
+                </div>
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">JavaScript Language</h4>
+                    <embed src="certifications/JavaScript Language.pdf" type="application/pdf"
+                      class="w-full h-[800px] rounded-lg" />
+                  </div>
+                </div>
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">SQL Essential Training</h4>
+                    <embed src="certifications/SQL Essential Training.pdf" type="application/pdf"
+                      class="w-full h-[800px] rounded-lg" />
+                  </div>
+                </div>
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">Pandas Basics</h4>
+                    <embed src="certifications/Simplilearn_Pandas_Basics.pdf" type="application/pdf"
+                      class="w-full h-[800px] rounded-lg" />
+                  </div>
+                </div>
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">AWS Diffusion Model</h4>
+                    <embed src="certifications/aws diffusion model.pdf" type="application/pdf"
+                      class="w-full h-[800px] rounded-lg" />
+                  </div>
+                </div>
+                <div class="min-w-full flex-shrink-0 p-4">
+                  <div class="bg-slate-800/50 rounded-lg p-6 text-center">
+                    <h4 class="text-blue-400 font-semibold mb-4">Evaluating LLMs Fine-tuning (AWS)</h4>
+                    <embed src="certifications/evaluating llms finetuning aws.pdf" type="application/pdf"
+                      class="w-full h-[800px] rounded-lg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button id="prevBtn"
+              class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-blue-600 hover:bg-blue-500 text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 z-10">
+              <i data-lucide="chevron-left" class="w-6 h-6"></i>
+            </button>
+            <button id="nextBtn"
+              class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-blue-600 hover:bg-blue-500 text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 z-10">
+              <i data-lucide="chevron-right" class="w-6 h-6"></i>
+            </button>
+
+            <!-- Indicators -->
+            <div class="flex justify-center gap-2 mt-6" id="indicators">
+              <button class="indicator w-3 h-3 rounded-full bg-blue-500 transition-all" data-index="0"></button>
+              <button class="indicator w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-500 transition-all"
+                data-index="1"></button>
+              <button class="indicator w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-500 transition-all"
+                data-index="2"></button>
+              <button class="indicator w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-500 transition-all"
+                data-index="3"></button>
+              <button class="indicator w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-500 transition-all"
+                data-index="4"></button>
+              <button class="indicator w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-500 transition-all"
+                data-index="5"></button>
+              <button class="indicator w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-500 transition-all"
+                data-index="6"></button>
+              <button class="indicator w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-500 transition-all"
+                data-index="7"></button>
+              <button class="indicator w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-500 transition-all"
+                data-index="8"></button>
+              <button class="indicator w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-500 transition-all"
+                data-index="9"></button>
+              <button class="indicator w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-500 transition-all"
+                data-index="10"></button>
+              <button class="indicator w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-500 transition-all"
+                data-index="11"></button>
+            </div>
+
+            <!-- Counter -->
+            <div class="text-center mt-4 text-slate-400 text-sm">
+              <span id="currentSlide">1</span> / <span id="totalSlides">12</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-12 text-slate-600 text-sm">
+          &copy; 2025 Anthony Raju Kondaveeti. Open to PhD opportunities.
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
