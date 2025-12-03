@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anthony Raju Kondaveeti | AI Researcher</title>
+  <title>Anthony Raju Kondaveeti</title>
+  <link rel="icon" type="image/png" id="favicon" href="favicon.png"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <link
@@ -78,6 +79,22 @@
     ::-webkit-scrollbar-thumb:hover {
       background: #475569;
     }
+
+    /* Typewriter cursor animation */
+    .typewriter-cursor {
+      display: inline-block;
+      animation: blink 1s infinite;
+      margin-left: 2px;
+    }
+
+    @keyframes blink {
+      0%, 50% {
+        opacity: 1;
+      }
+      51%, 100% {
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 
@@ -128,7 +145,7 @@
         </h1>
 
         <p class="text-xl md:text-2xl text-blue-200 font-light">
-          AI/ML Enthusiatic | Researcher | Developer
+          <span id="typewriter"></span><span class="typewriter-cursor">|</span>
         </p>
 
         <p class="text-slate-400 max-w-2xl mx-auto leading-relaxed">
