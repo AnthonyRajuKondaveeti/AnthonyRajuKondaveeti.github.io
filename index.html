@@ -6,56 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anthony Raju Kondaveeti</title>
   <link rel="icon" type="image/png" id="favicon" href="favicon.png"/>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="dist/output.css">
+  <script src="dist/lucide.min.js"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
-          },
-          colors: {
-            slate: {
-              850: '#151e2e',
-              900: '#0f172a',
-              950: '#020617',
-            },
-            primary: {
-              400: '#60a5fa',
-              500: '#3b82f6',
-              600: '#2563eb',
-            }
-          },
-          animation: {
-            'blob': 'blob 7s infinite',
-            'fade-in': 'fadeIn 0.5s ease-out forwards',
-            'slide-up': 'slideUp 0.5s ease-out forwards',
-          },
-          keyframes: {
-            blob: {
-              '0%': { transform: 'translate(0px, 0px) scale(1)' },
-              '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
-              '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
-              '100%': { transform: 'translate(0px, 0px) scale(1)' },
-            },
-            fadeIn: {
-              '0%': { opacity: '0' },
-              '100%': { opacity: '1' },
-            },
-            slideUp: {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            }
-          }
-        }
-      }
-    }
-  </script>
   <style>
     body {
       background-color: #020617;
@@ -165,12 +120,16 @@
           <a href="https://www.linkedin.com/in/anthony-raju-kondaveeti-855978281/" target="_blank"
             rel="noopener noreferrer"
             class="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-blue-500 transition-all group">
-            <i data-lucide="linkedin" class="text-blue-400 group-hover:text-white w-[18px] h-[18px]"></i>
+            <svg class="text-blue-400 group-hover:text-white w-[18px] h-[18px]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.025-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
             <span class="text-sm">LinkedIn</span>
           </a>
           <a href="https://github.com/AnthonyRajuKondaveeti" target="_blank" rel="noopener noreferrer"
             class="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-blue-500 transition-all group">
-            <i data-lucide="github" class="text-blue-400 group-hover:text-white w-[18px] h-[18px]"></i>
+            <svg class="text-blue-400 group-hover:text-white w-[18px] h-[18px]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
             <span class="text-sm">GitHub</span>
           </a>
           <a href="Anthony Raju Kondaveeti.pdf"
@@ -272,7 +231,7 @@
           <div class="h-px bg-slate-800 flex-1"></div>
         </div>
         <div class="space-y-8">
-          <!-- Experience 1 -->
+          <!-- Experience 0: Veriright -->
           <div class="relative pl-8 md:pl-0">
             <!-- Timeline Line (Desktop) -->
             <div
@@ -288,8 +247,59 @@
 
               <!-- Date Card -->
               <div class="hidden md:block w-[45%] text-left">
-                <div class="text-blue-400 font-mono text-sm mb-1">July 2025 – October 2025</div>
+                <div class="text-blue-400 font-mono text-sm mb-1">January 2026 – Present</div>
                 <div class="text-slate-500 text-sm flex items-center gap-1 justify-start">
+
+                  <i data-lucide="map-pin" class="w-3 h-3"></i>
+                  Bengaluru, India
+                </div>
+              </div>
+
+              <!-- Content Card -->
+              <div
+                class="md:w-[45%] bg-slate-800/30 border border-slate-700/50 p-6 rounded-xl hover:bg-slate-800/50 transition-all hover:-translate-y-1">
+                <div class="flex justify-between items-start mb-4 md:hidden">
+                  <span class="text-blue-400 text-xs font-mono bg-blue-500/10 px-2 py-1 rounded">January 2026 – Present</span>
+                </div>
+
+                <h3 class="text-xl font-bold text-white mb-1 flex items-center gap-2">
+                  <i data-lucide="briefcase" class="text-blue-500 w-[18px] h-[18px]"></i>
+                  AI Engineer Intern
+                </h3>
+                <div class="text-slate-400 font-medium mb-4">Veriright Management Sol Pvt. Ltd.</div>
+
+                <ul class="space-y-2">
+                  <li class="text-slate-300 text-sm leading-relaxed flex items-start gap-2">
+                    <span class="text-blue-500 mt-1.5">•</span>
+                    <span><span class="text-white font-medium">AI Social Media Hub:</span> Built a production-ready AI-powered social media management platform with real-time messaging, AI-assisted replies, and analytics using FastAPI, Celery, Redis, PostgreSQL, and OpenAI.</span>
+                  </li>
+                  <li class="text-slate-300 text-sm leading-relaxed flex items-start gap-2">
+                    <span class="text-blue-500 mt-1.5">•</span>
+                    <span><span class="text-white font-medium">SMS-Hulk:</span> Developed an AI-driven SMS campaign and lead management platform with automated messaging, personalized content generation, and campaign scheduling on a scalable FastAPI backend.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 1 -->
+          <div class="relative pl-8 md:pl-0">
+            <!-- Timeline Line (Desktop) -->
+            <div
+              class="hidden md:block absolute left-[50%] top-0 bottom-0 w-px bg-slate-800 transform -translate-x-1/2">
+            </div>
+
+            <div class="md:flex items-center justify-between gap-8">
+
+              <!-- Timeline Dot -->
+              <div
+                class="hidden md:block absolute left-1/2 w-4 h-4 bg-blue-500 rounded-full transform -translate-x-1/2 border-4 border-slate-900 z-10">
+              </div>
+
+              <!-- Date Card -->
+              <div class="hidden md:block w-[45%] text-right">
+                <div class="text-blue-400 font-mono text-sm mb-1">July 2025 – October 2025</div>
+                <div class="text-slate-500 text-sm flex items-center gap-1 justify-end">
 
                   <i data-lucide="map-pin" class="w-3 h-3"></i>
                   Bengaluru, India
@@ -341,7 +351,7 @@
               class="hidden md:block absolute left-[50%] top-0 bottom-0 w-px bg-slate-800 transform -translate-x-1/2">
             </div>
 
-            <div class="md:flex items-center justify-between gap-8">
+            <div class="md:flex items-center justify-between gap-8 md:flex-row-reverse">
 
               <!-- Timeline Dot -->
               <div
@@ -349,9 +359,9 @@
               </div>
 
               <!-- Date Card -->
-              <div class="hidden md:block w-[45%] text-right">
-                <div class="text-blue-400 font-mono text-sm mb-1">June 2025 – September 2025</div>
-                <div class="text-slate-500 text-sm flex items-center gap-1 justify-end">
+              <div class="hidden md:block w-[45%] text-left">
+                <div class="text-blue-400 font-mono text-sm mb-1">June 2025 – November 2025</div>
+                <div class="text-slate-500 text-sm flex items-center gap-1 justify-start">
                   <i data-lucide="map-pin" class="w-3 h-3"></i>
                   Bengaluru, India
                 </div>
@@ -361,25 +371,21 @@
               <div
                 class="md:w-[45%] bg-slate-800/30 border border-slate-700/50 p-6 rounded-xl hover:bg-slate-800/50 transition-all hover:-translate-y-1">
                 <div class="flex justify-between items-start mb-4 md:hidden">
-                  <span class="text-blue-400 text-xs font-mono bg-blue-500/10 px-2 py-1 rounded">June 2025 – September
+                  <span class="text-blue-400 text-xs font-mono bg-blue-500/10 px-2 py-1 rounded">June 2025 – November
                     2025</span>
                 </div>
 
                 <h3 class="text-xl font-bold text-white mb-1 flex items-center gap-2">
                   <i data-lucide="briefcase" class="text-blue-500 w-[18px] h-[18px]"></i>
-                  Python Tutor
+                  Python Instructor
                 </h3>
                 <div class="text-slate-400 font-medium mb-4">Christ University</div>
 
                 <ul class="space-y-2">
                   <li class="text-slate-300 text-sm leading-relaxed flex items-start gap-2">
                     <span class="text-blue-500 mt-1.5">•</span>
-                    <span>Designed Python curriculum for 50 Biotechnology undergraduates, achieving 95%
-                      proficiency.</span>
-                  </li>
-                  <li class="text-slate-300 text-sm leading-relaxed flex items-start gap-2">
-                    <span class="text-blue-500 mt-1.5">•</span>
-                    <span>Developed 30+ hands-on projects to accelerate problem-solving skills.</span>
+                    <span>Taught Python programming to 50+ Biostatistics undergraduates, designing a hands-on
+                      curriculum to build practical problem-solving skills.</span>
                   </li>
                 </ul>
               </div>
@@ -399,6 +405,104 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
+          <!-- Project Smart Keyboard -->
+          <div
+            class="group relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+            <div class="p-6 flex-1">
+              <div class="flex justify-between items-start mb-4">
+                <div class="p-2 bg-slate-800 rounded-lg text-blue-400 group-hover:text-blue-300 transition-colors">
+                  <i data-lucide="keyboard" class="w-6 h-6"></i>
+                </div>
+                <div class="flex gap-2">
+                  <a href="https://github.com/AnthonyRajuKondaveeti/SmartKey" target="_blank"
+                    rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">Smart Keyboard – Offline AI Writing Assistant</h3>
+
+              <ul class="space-y-2 mb-6">
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Built a system-wide Windows tool (Ctrl+Shift+T) that captures, grammar-corrects, and translates selected text entirely offline using quantized ONNX models.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Achieved sub-300ms correction latency via sentence-level splitting, LRU caching, and INT8 quantization, with automatic fallback between two model tiers.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Engineered a dual-engine pipeline (grammar + translation) with async callbacks, thread-safe result delivery, and auto-paste into any active application.
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-6 pt-0 mt-auto">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">Python</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">PyQt5</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">ONNX Runtime</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">pynput</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project MedExtract-AI -->
+          <div
+            class="group relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+            <div class="p-6 flex-1">
+              <div class="flex justify-between items-start mb-4">
+                <div class="p-2 bg-slate-800 rounded-lg text-blue-400 group-hover:text-blue-300 transition-colors">
+                  <i data-lucide="stethoscope" class="w-6 h-6"></i>
+                </div>
+                <div class="flex gap-2">
+                  <a href="https://github.com/AnthonyRajuKondaveeti/medextract-ai" target="_blank"
+                    rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">MedExtract-AI – Medical Report Digitization Platform</h3>
+
+              <ul class="space-y-2 mb-6">
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Designed a multi-stage document extraction pipeline with page-level confidence routing to minimize AI inference cost.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Built a production-ready FastAPI backend with parallel PDF processing, session-based authentication, and PostgreSQL job tracking.
+                </li>
+                <li class="text-slate-400 text-sm flex items-start gap-2">
+                  <span class="min-w-[4px] h-[4px] bg-slate-600 rounded-full mt-2"></span>
+                  Generated structured multi-sheet Excel reports (master data, abnormal values, review-required) to enable scalable medical data digitization.
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-6 pt-0 mt-auto">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">FastAPI</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">OpenAI Vision</span>
+                <span
+                  class="px-3 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full border border-blue-500/20">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
           <!-- Project Narrative Intelligence -->
           <div
             class="group relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
@@ -410,7 +514,9 @@
                 <div class="flex gap-2">
                   <a href="https://github.com/AnthonyRajuKondaveeti/story-analyzer" target="_blank"
                     rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
-                    <i data-lucide="github" class="w-5 h-5"></i>
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
                   </a>
                   <a href="https://tonyraju-story-intelligence-dashboard.hf.space/" target="_blank" rel="noopener noreferrer"
                     class="p-2 text-slate-400 hover:text-white transition-colors" title="Try it on Hugging Face">
@@ -463,9 +569,11 @@
                   <i data-lucide="code-2" class="w-6 h-6"></i>
                 </div>
                 <div class="flex gap-2">
-                  <a href="https://github.com/Benisonjac/CoChain.ai" target="_blank"
+                  <a href="https://github.com/AnthonyRajuKondaveeti/cochain.ai" target="_blank"
                     rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
-                    <i data-lucide="github" class="w-5 h-5"></i>
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -513,7 +621,9 @@
                 <div class="flex gap-2">
                   <a href="https://github.com/AnthonyRajuKondaveeti/Hybrid_RAG" target="_blank"
                     rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
-                    <i data-lucide="github" class="w-5 h-5"></i>
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -618,7 +728,9 @@
                 <div class="flex gap-2">
                   <a href="https://github.com/AnthonyRajuKondaveeti/youtube-analyzer-chrome-extension" target="_blank"
                     rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
-                    <i data-lucide="github" class="w-5 h-5"></i>
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -667,7 +779,9 @@
                 <div class="flex gap-2">
                   <a href="https://github.com/AnthonyRajuKondaveeti/ProPhoto-ai" target="_blank"
                     rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
-                    <i data-lucide="github" class="w-5 h-5"></i>
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -716,7 +830,9 @@
                 <div class="flex gap-2">
                   <a href="https://github.com/AnthonyRajuKondaveeti/Traffic-Sign-Recognition-using-CNN" target="_blank"
                     rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white transition-colors">
-                    <i data-lucide="github" class="w-5 h-5"></i>
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -806,7 +922,47 @@
               <span
                 class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">LangChain</span>
               <span
-                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Transformers</span>
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Hugging Face Transformers</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">ONNX Runtime</span>
+            </div>
+          </div>
+
+          <!-- LLM & NLP -->
+          <div class="bg-slate-800/30 border border-slate-700 rounded-xl p-6 hover:bg-slate-800/60 transition-colors">
+            <div class="flex items-center gap-3 mb-4 text-blue-400">
+              <i data-lucide="brain-circuit" class="w-5 h-5"></i>
+              <h3 class="font-bold text-white">LLM & NLP</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">RAG</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Cross-Encoders</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Hybrid Retrieval</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Prompt Engineering</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Sentence-Transformers</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Cost/Latency Optimization</span>
+            </div>
+          </div>
+
+          <!-- Document AI & OCR -->
+          <div class="bg-slate-800/30 border border-slate-700 rounded-xl p-6 hover:bg-slate-800/60 transition-colors">
+            <div class="flex items-center gap-3 mb-4 text-blue-400">
+              <i data-lucide="scan-text" class="w-5 h-5"></i>
+              <h3 class="font-bold text-white">Document AI & OCR</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Tesseract OCR</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">PDF Parsing</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Vision-LLM Extraction</span>
             </div>
           </div>
 
@@ -830,13 +986,17 @@
             </div>
           </div>
 
-          <!-- Infrastructure -->
+          <!-- Backend & Deployment -->
           <div class="bg-slate-800/30 border border-slate-700 rounded-xl p-6 hover:bg-slate-800/60 transition-colors">
             <div class="flex items-center gap-3 mb-4 text-blue-400">
               <i data-lucide="database" class="w-5 h-5"></i>
-              <h3 class="font-bold text-white">Infrastructure</h3>
+              <h3 class="font-bold text-white">Backend & Deployment</h3>
             </div>
             <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">FastAPI</span>
+              <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Flask</span>
               <span
                 class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Qdrant</span>
               <span
@@ -844,11 +1004,13 @@
               <span
                 class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">PostgreSQL</span>
               <span
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Supabase</span>
+              <span
                 class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Docker</span>
               <span
                 class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">Git</span>
               <span
-                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">AWS</span>
+                class="px-2 py-1 text-sm text-slate-300 bg-slate-700/50 rounded hover:text-white hover:bg-slate-700 transition-colors cursor-default">AWS EC2</span>
             </div>
           </div>
         </div>
@@ -865,7 +1027,8 @@
             <div class="space-y-4">
               <div>
                 <div class="text-white font-semibold">M.Sc. Data Science</div>
-                <div class="text-slate-500 text-sm">Christ University • 2024-Present</div>
+                <div class="text-slate-500 text-sm">Christ University • Jun 2024 – Mar 2026</div>
+                <div class="text-blue-500/80 text-xs mt-1">CGPA: 8.92/10</div>
               </div>
               <div>
                 <div class="text-white font-semibold">B.Sc. Math, Physics & CS</div>
@@ -879,7 +1042,9 @@
             <ul class="space-y-3 text-sm text-slate-400">
               <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>Advanced
                 Learning Algorithms (Coursera)</li>
-              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>AWS
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>Supervised
+                Machine Learning (Coursera)</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>AWS Cloud
                 Fundamentals</li>
               <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>SQL for
                 Data Science</li>
@@ -1027,7 +1192,7 @@
         </div>
 
         <div class="pt-12 text-slate-600 text-sm">
-          &copy; 2025 Anthony Raju Kondaveeti.
+          &copy; 2026 Anthony Raju Kondaveeti.
         </div>
       </div>
     </footer>
